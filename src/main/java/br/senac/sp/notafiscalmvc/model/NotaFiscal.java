@@ -1,22 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.senac.sp.notafiscalmvc.model;
 
-/**
- *
- * @author lucas
- */
 public class NotaFiscal {
+
     double valNota;
     int numNota;
-    
+    String NomProduto;
+
+    public String getNomProduto() {
+        return NomProduto;
+    }
+
+    public void setNomProduto(String NomProduto) {
+        System.out.print("O objeto nota recebeu um produto:");
+        System.out.println(NomProduto);
+        this.NomProduto = NomProduto;
+
+    }
+
     public NotaFiscal() {
         System.out.println("inicializando um objeto do tipo NotaFiscal");
     }
-    
+
     public double getValNota() {
         return valNota;
     }
@@ -36,6 +40,5 @@ public class NotaFiscal {
         System.out.println(numNota);
         this.numNota = numNota;
     }
-    
-    
+
 }
